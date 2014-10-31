@@ -1,0 +1,18 @@
+---
+grive_enabled: yes                       # Enable module
+
+#user: 'albandri' #please override me
+user: "{{ lookup('env','USER') }}"
+grive_owner: "{{ user }}"
+#home: '~' #please override me
+home: "{{ lookup('env','HOME') }}"
+grive_owner_home: "{{ home }}"
+grive_user_state: present
+grive_repository_state: present
+grive_bin: "/usr/bin/grive"
+
+docker_files_generated_directory: "./"
+docker_files_enable: no
+docker_volume_directory: "{{ grive_owner_home }}"
+docker_working_directory: "/home/vagrant"
+docker_image_name: "nabla/ansible-grive"

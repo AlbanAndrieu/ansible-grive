@@ -1,0 +1,26 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+
+#http://doc.ubuntu-fr.org/google_drive
+
+- name: Check user  
+  user: name={{ grive_owner }} state={{ grive_user_state }}
+  
+- name: Check user home directory
+  stat: path={{ grive_owner_home }}
+  register: home_present
+
+- debug: msg="Path exists and is a directory"
+  when: home_present.stat.isdir is defined and home_present.stat.isdir == true
+  
+- name: Add grive repo 
+  apt_repository: repo="ppa:thefanclub/grive-tools" update_cache=yes state={{ grive_repository_state }}  
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+    
+- name: Install grive
+  apt: pkg={{ item }} state=present update_cache=yes
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+  with_items:
+   - grive-tools
+
+- debug: msg="Grive was installed in {{ grive_bin }}"
