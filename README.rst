@@ -62,7 +62,7 @@ Authors and license
 
 ``grive`` role was written by:
 - `Alban Andrieu <fr.linkedin.com/in/nabla/>`_ | `e-mail <mailto:alban.andrieu@free.fr>`_ | `Twitter <https://twitter.com/AlbanAndrieu>`_ | `GitHub <https://github.com/AlbanAndrieu>`_
-License: `GPLv3 <https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29>`_
+- License: `GPLv3 <https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29>`_
 
 Feedback, bug-reports, requests, ...
 ~~~~~~~~~~~~~~~~~~~
