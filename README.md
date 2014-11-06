@@ -35,6 +35,7 @@ List of default variables available in the inventory:
     docker_volume_directory: "{{ grive_owner_home }}"
     docker_working_directory: "/home/vagrant"
     docker_image_name: "nabla/ansible-grive"
+```
 
 
 ### Detailed usage guide
