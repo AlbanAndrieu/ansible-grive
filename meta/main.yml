@@ -26,15 +26,31 @@ galaxy_info:
   - cloud
 
 ansigenome_info:
+  github_url: "https://github.com/AlbanAndrieu/ansible-grive"
+  git_branch: "master"
   galaxy_id: '2078'
 
   travis: True
+  
+  license_url: 'https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)'
 
+  authors:
+    - name:  'Alban Andrieu'
+      url: 'fr.linkedin.com/in/nabla/'
+      email: 'alban.andrieu@free.fr'
+      twitter: 'AlbanAndrieu'
+      github: 'AlbanAndrieu'
+      
   synopsis: |
     Describe your role in a few paragraphs....
 
   usage: |
     Describe how to use in more detail...
 
-  #custom: |
-  #  Any custom output you want after the usage section..
+  custom: |
+    [![Tag](http://img.shields.io/github/tag/AlbanAndrieu/ansible-gdrive.svg?style=flat-square)]()
+    
+    #### Feedback, bug-reports, requests, ...
+
+    Are [welcome](https://github.com/AlbanAndrieu/ansible-gdrive/issues)!
+    

@@ -57,11 +57,16 @@ Detailed usage guide
 Describe how to use in more detail...
 
 
+[![Tag](http://img.shields.io/github/tag/AlbanAndrieu/ansible-gdrive.svg?style=flat-square)]()
+
+#### Feedback, bug-reports, requests, ...
+
+Are [welcome](https://github.com/AlbanAndrieu/ansible-gdrive/issues)!
 Authors and license
 ~~~~~~~~~~~~~~~~~~~
 
 ``grive`` role was written by:
-- `Alban Andrieu <nabla.mobi>`_ | `e-mail <mailto:alban.andrieu@free.fr>`_ | `Twitter <https://twitter.com/AlbanAndrieu>`_License: `GPLv3 <https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29>`_
+- `Alban Andrieu <fr.linkedin.com/in/nabla/>`_ | `e-mail <mailto:alban.andrieu@free.fr>`_ | `Twitter <https://twitter.com/AlbanAndrieu>`_ | `GitHub <https://github.com/AlbanAndrieu>`_License: `GPLv3 <https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29>`_
 
 ****
 
