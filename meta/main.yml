@@ -43,7 +43,6 @@ ansigenome_info:
       
   synopsis: |
     This role can be used to install google drive.
-    [Tag](http://img.shields.io/github/tag/AlbanAndrieu/ansible-gdrive.svg?style=flat-square)
 
   usage: |
     Describe how to use in more detail...
