@@ -1,6 +1,6 @@
 ## grive
 
-[![Travis CI](http://img.shields.io/travis/AlbanAndrieu/ansible-grive.svg?style=flat)](http://travis-ci.org/AlbanAndrieu/ansible-grive) [![Travis CI](http://img.shields.io/github/tag/AlbanAndrieu/ansible-grive.svg?style=flat-square)]()  [![Ansible Galaxy](http://img.shields.io/badge/galaxy-AlbanAndrieu.grive-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2078) [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
+[![Travis CI](http://img.shields.io/travis/AlbanAndrieu/ansible-grive.svg?style=flat)](http://travis-ci.org/AlbanAndrieu/ansible-grive) [![Branch](http://img.shields.io/github/tag/AlbanAndrieu/ansible-grive.svg?style=flat-square)](https://github.com/AlbanAndrieu/ansible-grive/tree/master)  [![Ansible Galaxy](http://img.shields.io/badge/galaxy-AlbanAndrieu.grive-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2078) [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
 This role can be used to install google drive.
 
@@ -16,6 +16,7 @@ This role requires at least Ansible `v1.6.3`. To install it, run:
 
 List of default variables available in the inventory:
 
+```yaml
     ---
     grive_enabled: yes                       # Enable module
     
@@ -44,7 +45,8 @@ Describe how to use in more detail...
 ### Authors and license
 
 `grive` role was written by:
-- [Alban Andrieu](fr.linkedin.com/in/nabla/) | [e-mail](mailto:alban.andrieu@free.fr) | [Twitter](https://twitter.com/AlbanAndrieu) | [GitHub](https://github.com/AlbanAndrieu)- License: [GPLv3](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
+- [Alban Andrieu](fr.linkedin.com/in/nabla/) | [e-mail](mailto:alban.andrieu@free.fr) | [Twitter](https://twitter.com/AlbanAndrieu) | [GitHub](https://github.com/AlbanAndrieu)
+- License: [GPLv3](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
 
 ### Feedback, bug-reports, requests, ...
 

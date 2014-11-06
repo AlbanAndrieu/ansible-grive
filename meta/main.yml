@@ -26,13 +26,13 @@ galaxy_info:
   - cloud
 
 ansigenome_info:
-  github_url: "https://github.com/AlbanAndrieu/ansible-grive"
+#  github_url: "https://github.com/AlbanAndrieu/ansible-grive"
   git_branch: "master"
   galaxy_id: '2078'
 
   travis: True
   
-  license_url: 'https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)'
+#  license_url: 'https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)'
 
   authors:
     - name:  'Alban Andrieu'
