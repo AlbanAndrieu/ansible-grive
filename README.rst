@@ -1,16 +1,19 @@
 grive
-===== 
+=====
 
 |Travis CI| |Tag| |Ansible Galaxy| |Platforms|
 .. |Travis CI| image:: http://img.shields.io/travis/AlbanAndrieu/ansible-grive.svg?style=flat
    :target: http://travis-ci.org/AlbanAndrieu/ansible-grive
+
 .. |Tag| image:: http://img.shields.io/github/tag/AlbanAndrieu/ansible-grive.svg?style=flat-square
-   :target: #      
- 
+   :target: #
+
 .. |Ansible Galaxy| image:: http://img.shields.io/badge/galaxy-AlbanAndrieu.grive-660198.svg?style=flat
    :target: https://galaxy.ansible.com/list#/roles/2078
+   
 .. |Platforms| image:: http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat
    :target: #
+   
 
 
 This role can be used to install google drive.
