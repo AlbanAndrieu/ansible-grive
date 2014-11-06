@@ -47,7 +47,6 @@ ansigenome_info:
   usage: |
     Describe how to use in more detail...
 
-  custom: |
-    Feedback, bug-reports, requests, ...
-    Are [welcome](https://github.com/AlbanAndrieu/ansible-gdrive/issues)!
+#  custom: |
+#    Feedback, bug-reports, requests, ...
     
