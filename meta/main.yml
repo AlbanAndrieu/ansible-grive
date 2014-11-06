@@ -42,15 +42,13 @@ ansigenome_info:
       github: 'AlbanAndrieu'
       
   synopsis: |
-    Describe your role in a few paragraphs....
+    This role can be used to install google drive.
+    [Tag](http://img.shields.io/github/tag/AlbanAndrieu/ansible-gdrive.svg?style=flat-square)
 
   usage: |
     Describe how to use in more detail...
 
   custom: |
-    [![Tag](http://img.shields.io/github/tag/AlbanAndrieu/ansible-gdrive.svg?style=flat-square)]()
-    
-    #### Feedback, bug-reports, requests, ...
-
+    Feedback, bug-reports, requests, ...
     Are [welcome](https://github.com/AlbanAndrieu/ansible-gdrive/issues)!
     
