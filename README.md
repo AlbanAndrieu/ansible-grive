@@ -1,12 +1,14 @@
 ## grive
 
-[![Travis CI](http://img.shields.io/travis/AlbanAndrieu/ansible-grive.svg?style=flat)](http://travis-ci.org/AlbanAndrieu/ansible-grive) [![Branch](http://img.shields.io/github/tag/AlbanAndrieu/ansible-grive.svg?style=flat-square)](https://github.com/AlbanAndrieu/ansible-grive/tree/master)  [![Ansible Galaxy](http://img.shields.io/badge/galaxy-AlbanAndrieu.grive-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2078) [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
+[![Travis CI](http://img.shields.io/travis/AlbanAndrieu/ansible-grive.svg?style=flat)](http://travis-ci.org/AlbanAndrieu/ansible-grive) [![Branch](http://img.shields.io/github/tag/AlbanAndrieu/ansible-grive.svg?style=flat-square)](https://github.com/AlbanAndrieu/ansible-grive/tree/master) [![Donate](https://img.shields.io/gratipay/AlbanAndrieu.svg?style=flat)](https://www.gratipay.com/AlbanAndrieu)  [![Ansible Galaxy](http://img.shields.io/badge/galaxy-AlbanAndrieu.grive-blue.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2078) [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
 This role can be used to install google drive.
 
 ### Installation
 
-This role requires at least Ansible `v1.6.3`. To install it, run:
+This role requires at least Ansible `v1.6.3`. 
+
+To install it, run:
 
     ansible-galaxy install AlbanAndrieu.grive
 
@@ -51,7 +53,7 @@ Describe how to use in more detail...
 
 ### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/AlbanAndrieu/ansible-grive/issues>)!
+Are [welcome](https://github.com/AlbanAndrieu/ansible-grive/issues)!
 
 ***
 
