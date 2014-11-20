@@ -15,10 +15,12 @@
   
 - name: Add grive repo 
   apt_repository: repo="ppa:thefanclub/grive-tools" update_cache=yes state={{ grive_repository_state }}  
+  sudo: yes
   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
     
 - name: Install grive
   apt: pkg={{ item }} state=present update_cache=yes
+  sudo: yes  
   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
   with_items:
    - grive-tools

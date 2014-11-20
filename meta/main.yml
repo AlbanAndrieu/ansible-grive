@@ -45,7 +45,9 @@ ansigenome_info:
     This role can be used to install google drive.
 
   usage: |
-    Describe how to use in more detail...
+    Run the following command :
+    
+    `ansible-playbook -i hosts -c local -v grive.yml -vvvv --ask-sudo-pass | tee setup.log`
 
 #  custom: |
 #    Feedback, bug-reports, requests, ...
