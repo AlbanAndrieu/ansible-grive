@@ -16,12 +16,12 @@
 - name: Add grive repo 
   apt_repository: repo="ppa:thefanclub/grive-tools" update_cache=yes state={{ grive_repository_state }}  
   sudo: yes
-  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu')
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
     
 - name: Install grive
   apt: pkg={{ item }} state=present update_cache=yes
   sudo: yes  
-  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu')
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
   with_items:
    - grive-tools
 
