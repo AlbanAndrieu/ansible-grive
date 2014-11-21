@@ -4,8 +4,4 @@
   roles:
     - { role: ./,
         docker_files_enable: yes
-        #user: "root",
-        #home: "/root"     
       }
-
-#- include: docker/integration-tests.yml
