@@ -1,5 +1,4 @@
 ---
-
 dependencies: []
 
 galaxy_info:
@@ -27,9 +26,11 @@ galaxy_info:
 
 ansigenome_info:
 #  github_url: "https://github.com/AlbanAndrieu/ansible-grive"
-  git_branch: "master"
+#  git_branch: "master"
   galaxy_id: '2078'
-
+  galaxy_user: 'alban.andrieu'
+  galaxy_name: 'gdrive'
+  
   travis: True
   
 #  license_url: 'https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)'

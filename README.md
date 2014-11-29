@@ -1,6 +1,6 @@
-## grive
+## alban.andrieu.grive
 
-[![Travis CI](http://img.shields.io/travis/AlbanAndrieu/ansible-grive.svg?style=flat)](http://travis-ci.org/AlbanAndrieu/ansible-grive) [![Branch](http://img.shields.io/github/tag/AlbanAndrieu/ansible-grive.svg?style=flat-square)](https://github.com/AlbanAndrieu/ansible-grive/tree/master) [![Donate](https://img.shields.io/gratipay/AlbanAndrieu.svg?style=flat)](https://www.gratipay.com/AlbanAndrieu)  [![Ansible Galaxy](http://img.shields.io/badge/galaxy-AlbanAndrieu.grive-blue.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2078) [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
+[![Travis CI](http://img.shields.io/travis/AlbanAndrieu/ansible-gdrive.svg?style=flat)](http://travis-ci.org/AlbanAndrieu/ansible-gdrive) [![Branch](http://img.shields.io/github/tag/AlbanAndrieu/ansible-gdrive.svg?style=flat-square)](https://github.com/AlbanAndrieu/ansible-gdrive/tree/master) [![Donate](https://img.shields.io/gratipay/AlbanAndrieu.svg?style=flat)](https://www.gratipay.com/AlbanAndrieu)  [![Ansible Galaxy](http://img.shields.io/badge/galaxy-alban.andrieu.gdrive-blue.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2078) [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
 This role can be used to install google drive.
 
@@ -10,7 +10,7 @@ This role requires at least Ansible `v1.6.3`.
 
 To install it, run:
 
-    ansible-galaxy install AlbanAndrieu.grive
+    ansible-galaxy install alban.andrieu.gdrive
 
 
 
@@ -19,8 +19,7 @@ To install it, run:
 List of default variables available in the inventory:
 
 ```yaml
-    ---
-    grive_enabled: yes                       # Enable module
+        grive_enabled: yes                       # Enable module
     
     #user: 'albandri' #please override me
     user: "{{ lookup('env','USER') }}"
@@ -42,18 +41,20 @@ List of default variables available in the inventory:
 
 ### Detailed usage guide
 
-Describe how to use in more detail...
+Run the following command :
+
+`ansible-playbook -i hosts -c local -v grive.yml -vvvv --ask-sudo-pass | tee setup.log`
 
 
 ### Authors and license
 
-`grive` role was written by:
+`alban.andrieu.grive` role was written by:
 - [Alban Andrieu](fr.linkedin.com/in/nabla/) | [e-mail](mailto:alban.andrieu@free.fr) | [Twitter](https://twitter.com/AlbanAndrieu) | [GitHub](https://github.com/AlbanAndrieu)
 - License: [GPLv3](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
 
 ### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/AlbanAndrieu/ansible-grive/issues)!
+Are [welcome](https://github.com/AlbanAndrieu/ansible-gdrive/issues)!
 
 ***
 
