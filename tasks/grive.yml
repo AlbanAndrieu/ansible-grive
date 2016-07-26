@@ -33,8 +33,10 @@
   sudo: yes
   when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
   with_items:
-   - grive=0.5.1-1+git2
-   - grive-tools=1.15
+#   - grive=0.5.1-1+git2
+   - grive
+#   - grive-tools=1.15
+   - grive-tools
 
 - name: Autoremove packages
   apt: autoremove=yes
