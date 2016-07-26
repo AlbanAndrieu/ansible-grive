@@ -38,9 +38,9 @@
 #   - grive-tools=1.15
    - grive-tools
 
-- name: Autoremove packages
-  apt: autoremove=yes
-  sudo: yes
-  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu')
+#- name: Autoremove packages
+#  apt: autoremove
+#  sudo: yes
+#  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu')
 
 - debug: msg="Grive was installed in {{ grive_bin }}"
