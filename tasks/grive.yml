@@ -19,11 +19,11 @@
   when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
 
 - name: Install grive
-  apt: pkg={{ item }} state=latest update_cache=yes
+  apt: pkg={{ item }} state=present update_cache=yes
   sudo: yes
   when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
   with_items:
-   - grive
-   - grive-tools
+   - grive=0.5.1-1+git2
+   - grive-tools=1.15
 
 - debug: msg="Grive was installed in {{ grive_bin }}"
