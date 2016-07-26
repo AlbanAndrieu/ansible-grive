@@ -13,17 +13,32 @@
 - debug: msg="Path exists and is a directory"
   when: home_present.stat.isdir is defined and home_present.stat.isdir == true
 
+- name: Update all packages to the latest version
+  apt: upgrade=dist update_cache=yes dpkg_options='force-confold,force-confdef'
+  sudo: yes
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu')
+
 - name: Add grive repo
+  apt_repository: repo="ppa:nilarimogard/webupd8" update_cache=yes state={{ grive_repository_state }}
+  sudo: yes
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
+
+- name: Add grive-tools repo
   apt_repository: repo="ppa:thefanclub/grive-tools" update_cache=yes state={{ grive_repository_state }}
   sudo: yes
   when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
 
 - name: Install grive
-  apt: pkg={{ item }} state=present update_cache=yes
+  apt: pkg={{ item }} state=present update_cache=yes install_recommends=yes
   sudo: yes
   when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
   with_items:
    - grive=0.5.1-1+git2
    - grive-tools=1.15
+
+- name: Autoremove packages
+  apt: autoremove=yes
+  sudo: yes
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu')
 
 - debug: msg="Grive was installed in {{ grive_bin }}"
