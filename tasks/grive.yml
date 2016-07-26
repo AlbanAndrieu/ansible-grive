@@ -13,10 +13,10 @@
 - debug: msg="Path exists and is a directory"
   when: home_present.stat.isdir is defined and home_present.stat.isdir == true
 
-- name: Update all packages to the latest version
-  apt: upgrade=dist update_cache=yes dpkg_options='force-confold,force-confdef'
-  sudo: yes
-  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu')
+#- name: Update all packages to the latest version
+#  apt: upgrade=dist update_cache=yes dpkg_options='force-confold,force-confdef'
+#  sudo: yes
+#  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu')
 
 - name: Add grive repo
   apt_repository: repo="ppa:nilarimogard/webupd8" update_cache=yes state={{ grive_repository_state }}
