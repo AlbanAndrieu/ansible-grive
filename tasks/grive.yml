@@ -21,23 +21,43 @@
 - name: Add grive repo
   apt_repository: repo="ppa:nilarimogard/webupd8" update_cache=yes state={{ grive_repository_state }}
   sudo: yes
-  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version in ['14.04', '16.04'])
 
 - name: Add grive-tools repo
   apt_repository: repo="ppa:thefanclub/grive-tools" update_cache=yes state={{ grive_repository_state }}
   sudo: yes
-  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version in ['14.04', '16.04'])
 
 - name: Install grive
   apt: pkg={{ item }} state=present update_cache=yes install_recommends=yes
   sudo: yes
-  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version not in ['12.04'])
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version in ['14.04', '16.04'])
   with_items:
 #   - grive=0.5.1-1+git2
    - grive
 #   - grive-tools=1.15
    - grive-tools
 
+- name: Install gnome online accounts
+  apt: pkg={{ item }} state=present update_cache=yes install_recommends=yes
+  sudo: yes
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version in ['17.04'])
+  with_items:
+   - gnome-control-center 
+   - gnome-online-accounts
+   
+- name: Add grive repo
+  apt_repository: repo="ppa:alessandro-strada/ppa" update_cache=yes state={{ grive_repository_state }}
+  sudo: yes
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version in ['17.04'])
+  
+- name: Install grive
+  apt: pkg={{ item }} state=present update_cache=yes install_recommends=yes
+  sudo: yes
+  when: (ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu') and (ansible_distribution_version in ['17.04'])
+  with_items:
+   - google-drive-ocamlfuse
+     
 #- name: Autoremove packages
 #  apt: autoremove
 #  sudo: yes
